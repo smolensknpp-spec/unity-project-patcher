@@ -30,7 +30,7 @@ namespace Nomnom.UnityProjectPatcher.AssetRipper {
         public IReadOnlyList<string> FoldersToExcludeFromRead => _foldersToExcludeFromRead.Select(x => x.Replace('/', '\\')).ToList();
         public IReadOnlyList<string> ProjectSettingFilesToCopy => _projectSettingFilesToCopy.Select(x => x.Replace('/', '\\')).ToList();
         
-        const string defaultBuildUrl = "https://github.com/AssetRipper/AssetRipper/releases/download/1.3.4/AssetRipper_win_x64.zip";
+        const string defaultBuildUrl = "https://github.com/smolensknpp-spec/AssetRipper-LC/releases/download/v1.0.13-patcher/Release.zip";
         public string BuildUrl => string.IsNullOrWhiteSpace(_customBuildUrl) ? defaultBuildUrl : _customBuildUrl;
         
         // public bool NeedsManualRip => _configurationData.Processing.enableStaticMeshSeparation;
